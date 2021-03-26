@@ -14,12 +14,12 @@
     <!-----Container----->
     <div class="container">
         <!-----Notification Bar----->
-        <div id="topBar">
+        <section id="topBar" class="noti-bar">
             <div class="wrap">
-                <p>LIVE RACE STREAM FROM GATOR NATIONALS IN SARASOTA, FL / <a href="#">WATCH NOW</a></p>
+                <p>Live race stream from gator nationals in sarasota, fl / <a href="#">Watch now</a></p>
                 <a href="#" class="closeBtn" onclick="closeBtn()"><i class="fas fa-times-circle"></i></a>
             </div>
-        </div>
+        </section>
         <!------Header----->
         <header>
             <!-----Primary Header----->
@@ -27,20 +27,48 @@
                 <div class="wrap">
                     <div class="Brand">
                         <h1 class="logo">Adidas</h1>
+                        <img src="../img/burger-icon.png" class="toggler-btn" onclick="togglemenu()">
                     </div>
                     <div class="membership">
                         <a href="#" class="btn">Membership</a>
                         <a href="#" class="btn">Account</a>
                     </div>
-                    <!-----Secondary Header / Navigation Bar----->
-                    <nav class="seconday-header">
-                    </nav>
                 </div>
             </div>
-            
+            <!-----Secondary Header / Navigation Bar----->
+            <nav class="seconday-header" id="navBar">
+                <div class="wrap">
+                    <ul class="navbar">
+                        <li><a href="#" class="nav-item active">Our Tracks</a></li>
+                        <li><a href="#" class="nav-item">Find Events</a></li>
+                        <li><a href="#" class="nav-item">Track Map</a></li>
+                        <li><a href="#" class="nav-item">Shop</a></li>
+                        <li><a href="#" class="nav-item">About Us</a></li>
+                    </ul>
+                    <input type="text" placeholder="Search" class="searchbar">
+                </div>
+            </nav>
         </header>
-        
-        <main>
+        <!--Homepage-->
+        <main class="homepage">
+            <!--Title Bar-->
+            <section class="title-bar">
+                <div class="wrap">
+                    <div class="page-title">
+                        <h2>Home Page</h2>
+                    </div>
+                    <div class="partnership">
+                        <p>Partnership by</p>
+                        <img src="img/reebok-logo.png" alt="Reebok">
+                    </div>
+                </div>
+            </section>
+            <!--Main Slider-->
+            <section class="main-slider">
+                <div class="wrap">
+
+                </div>
+            </section>
 
         </main>
         <footer>

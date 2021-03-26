@@ -1,0 +1,208 @@
+/******3. Header*****/
+/******3.1. Primary Header*****/
+.primary-header{
+    min-height: 60px;
+    background-image: url(../img/imgs/green-background.png);
+}
+.primary-header .wrap{
+    display: grid;
+    grid-template-columns: auto 320px;
+    padding: 10px 15px;
+}
+.toggler-btn{
+    display: none;
+}
+.logo{
+    text-indent: -999999999px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: auto;
+    width: 139px;
+}
+.membership {
+    text-align: right;
+}
+.btn{
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    padding: 11px 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+    margin-right: -5px;
+
+    background-color: #217f40;
+    background-color: rgba(33, 127, 64, 0.8);
+    background-blend-mode: screen;
+    background-image: url(../img/imgs/green-background.png);
+}
+.membership .btn:last-child {
+    background-color: #08512d;
+    background-color: rgba(8, 81, 45, 0.5);
+}
+.membership .btn:last-child:hover{
+    background-color: #217f40;
+    background-color: rgba(33, 127, 64, 0.8);
+}
+/******3.2. Secondary Header / Navigation Bar*****/
+.seconday-header{
+    min-height: 60px;
+    background-color: #08512d;
+    background-color: rgba(8, 81, 45, 0.5);
+    background-blend-mode: screen;
+    background-image: url(../img/imgs/green-background.png);
+    filter: drop-shadow(0px 2px 2.5px rgba(0,0,0,0.25));
+}
+.seconday-header .wrap{
+    display: grid;
+    grid-template-columns: auto 255px;
+    align-items: center;
+}
+.seconday-header .navbar{
+    margin-left: -8px;
+}
+.seconday-header .navbar li{
+    list-style: none;
+    display: inline-block;
+    margin-right: -4px;
+}
+.seconday-header .navbar .nav-item {
+    display: inline-block;
+    padding: 21px 38px;
+    margin-right: -16px;
+    font-size: 18px;
+    clip-path: polygon(calc(0% + 16px) 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+    text-decoration: none;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.seconday-header .navbar .nav-item:hover, .active{
+    background-color: #217f40;
+    background-color: rgba(33, 127, 64, 0.8);
+    background-blend-mode: screen;
+    background-image: url(../img/imgs/green-background.png);
+}
+.searchbar{
+    padding: 10px 15px;
+    background-color: transparent;
+    background-image: url(../img/imgs/green-background.png);
+    width: 255px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+}
+input.searchbar::placeholder {
+    background: url(../img/search-icon.png) no-repeat right;
+    color: #869a94;
+    text-transform: uppercase;
+}
+input.searchbar:focus {
+    outline: none;
+}
+
+
+/******2.1. Tablet View (980px)*****/
+@media screen and (max-width: 980px){
+    .seconday-header .navbar .nav-item {
+        padding: 21px 28px;
+        font-size: 16px;
+    }
+    
+}
+/******2.2. Tablet View (820px)*****/
+@media screen and (max-width: 820px){
+    .seconday-header .wrap{
+        grid-template-columns: auto;
+    }
+    .searchbar {
+        margin: 10px 0;
+    }
+}
+/******2.2. Tablet View (600px)*****/
+@media screen and (max-width: 600px){
+    .logo{
+        width: 94px;
+    }
+    
+}
+/******2.3. Mobile View (475px)*****/
+@media screen and (max-width: 475px){
+    .primary-header{
+        min-height: 100px;
+    }
+    .primary-header .wrap{
+        display: block;
+        padding: 0;
+    }
+    .Brand {
+        display: grid;
+        grid-template-columns: auto 25px;
+        align-items: center;
+        height: 60px;
+        padding: 0 15px;
+    }
+    .toggler-btn{
+        display: block;
+        cursor: pointer;
+    }
+    .membership {
+        text-align: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn{
+        clip-path: none;
+        margin-right: -3px;
+        width: 100%;
+    }
+    .btn:first-child{
+        border-right: 1px solid #fff;
+    }
+    .seconday-header{
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: 9;
+        height: 100vh;
+    }
+    .seconday-header .wrap{
+        padding: 10px 15px;
+        grid-template-columns: auto;
+    }
+    .seconday-header .navbar{
+        margin: 20px 0 0;
+        grid-row-start: 2;
+    }
+    .seconday-header .navbar li{
+        display: block;
+        margin-right: 0;
+    }
+    .seconday-header .navbar .nav-item {
+        clip-path: polygon(0% 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+        margin-right: 0;
+        padding: 21px 28px 21px 20px;
+    }
+    .searchbar{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+}

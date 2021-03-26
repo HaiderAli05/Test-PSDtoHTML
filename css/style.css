@@ -1,96 +1,33 @@
-/*=====Table of Content=====*/
+@import "_topbar.css";
+@import "_header.css";
+@import "_homepage.css";
+
+/******************************Table of Content**********************************/
 /******1. Global Stylings*****/
 /******2. Top Bar*****/
 /******3. Header*****/
 /******3.1. Primary Header*****/
 /******3.2. Seconday Header*****/
 /******4. Homepage*****/
-/****************************************************************/
+/******4.1 Title Bar*****/
+/******************************The End**********************************/
 
 /******1. Global Stylings*****/
 *{
     margin: 0;
     padding: 0;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 body{
     font-family: 'Roboto', sans-serif;
 
 }
-:root{
+/* :root{
 
-}
+} */
 .wrap{
-    max-width: 1110px;
+    max-width: 1140px;
     margin: auto;
-    padding: 10px 0;
-}
-.btn{
-    width: 160px;
-    height: 40px;
-    background-color: #217f40;
-
-}
-/******2. Top Bar*****/
-#topBar{
-    font-size: 14px;
-    text-align: center;
-    min-height: 50px;
-}
-#topBar .wrap{
-    display: grid;
-    grid-template-columns: 95% 5%;
-}
-#topBar p{
-    line-height: 22px;
-    color: #222222;
-    font-weight: 500;
-    margin: auto;
-}
-#topBar a{
-    color: #217f40;
-    margin: auto;;
-}
-a.closeBtn i{
-    color: #217f40; 
-    font-size: 24px;
-    font-weight: 600;
-}
-
-/******2.1. Tablet View (768px)*****/
-@media screen and (max-width: 768px){
-    #topBar{
-        grid-template-columns: 90% 10%;
-    }
-}
-/******2.2. Mobile View (375px)*****/
-@media screen and (max-width: 375px){
-    #topBar{
-        grid-template-columns: 85% 15%;
-        text-align: left;
-        font-size: 12px;
-        padding: 20px 15px;
-    }
-}
-/******3. Header*****/
-/******3.1. Primary Header*****/
-.primary-header{
-    min-height: 60px;
-    background-color: #012c1f;
-}
-.primary-header .wrap{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    
-}
-.brnad{
-}
-.logo{
-    text-indent: -999999999px;
-    background-image: url(../img/logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 30px;
-    width: 200px;
-    margin: auto 0;
+    padding: 0 15px;
 }

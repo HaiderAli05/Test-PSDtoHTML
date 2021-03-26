@@ -1,0 +1,17 @@
+/******4. Homepage*****/
+.homepage{
+    background-image: url(../img/imgs/green-background.png);
+}
+.title-bar{
+    min-height: 100px;
+    background-color: #217f40;
+    background-color: rgba(33, 127, 64, 0.8);
+    background-blend-mode: screen;
+    background-image: url(../img/imgs/green-background.png);
+}
+.page-title{
+    clip-path: polygon(0 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);   
+}
+.partnership{
+    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, 100% 100%, 0% 100%);
+}
