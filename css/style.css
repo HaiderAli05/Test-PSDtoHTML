@@ -1,6 +1,12 @@
-@import "_topbar.css";
-@import "_header.css";
-@import "_homepage.css";
+/*
+Theme Name: Test-PSDtoHTML
+Theme URI: https://github.com/HaiderAli05/Test-PSDtoHTML
+Author: Haider Ali
+Author URI: https://facebook.com/EngineerHaiderAli05/
+Description: It is the theme that is given by WPBrigade for just testing my skills of converting any PSD to HTML, CSS and JavaScript.
+Tags: WPBrigade Project, Test-PSDtoHTML, Carbon Copy of Adidas
+Version: 1.0
+*/
 
 /******************************Table of Content**********************************/
 /******1. Global Stylings*****/
@@ -11,6 +17,10 @@
 /******4. Homepage*****/
 /******4.1 Title Bar*****/
 /******************************The End**********************************/
+
+@import "_topbar.css";
+@import "_header.css";
+@import "_homepage.css";
 
 /******1. Global Stylings*****/
 *{

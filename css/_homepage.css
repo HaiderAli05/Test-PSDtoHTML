@@ -1,5 +1,5 @@
 /******4. Homepage*****/
-.homepage{
+#homepage{
     background-image: url(../img/imgs/green-background.png);
 }
 .title-bar{
@@ -10,8 +10,8 @@
     background-image: url(../img/imgs/green-background.png);
 }
 .page-title{
-    clip-path: polygon(0 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);   
+    clip-path: polygon(0 0%, 100% 0%, calc(100% - 27px) 100%, 0% 100%);   
 }
 .partnership{
-    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(calc(0% + 27px) 0%, 100% 0%, 100% 100%, 0% 100%);
 }

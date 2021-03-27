@@ -1,23 +1,23 @@
 /******2. Top Bar*****/
-.noti-bar{
+#topBar{
     font-size: 14px;
     min-height: 50px;
     background-image: url("../img/imgs/white-background.png");
 }
-.noti-bar .wrap{
+#topBar .wrap{
     max-width: 1440px;
     text-align: center;
     padding: 16px 15px 12px;
     position: relative;
 }
-.noti-bar p{
+#topBar p{
     color: #222222;
     font-weight: 500;
     display: inline-block;
     line-height: 22px;
     text-transform: uppercase;
 }
-.noti-bar a{
+#topBar a{
     color: #217f40;
 }
 a.closeBtn{
@@ -36,7 +36,7 @@ a.closeBtn i{
 }
 /******2.2. Tablet View (600px)*****/
 @media screen and (max-width: 600px){
-    .noti-bar .wrap{
+    #topBar .wrap{
         display: grid;
         grid-template-columns: 90% 10%;
         text-align: left;
@@ -48,7 +48,7 @@ a.closeBtn i{
 }
 /******2.3. Mobile View (375px)*****/
 @media screen and (max-width: 375px){
-    .noti-bar .wrap{
+    #topBar .wrap{
         grid-template-columns: 85% 15%;
         font-size: 12px;
         padding: 14px 15px;
