@@ -2,7 +2,7 @@
 #topBar{
     font-size: 14px;
     min-height: 50px;
-    background-image: url("../img/imgs/white-background.png");
+    background-image: url("../img/white-background.png");
 }
 #topBar .wrap{
     max-width: 1440px;

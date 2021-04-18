@@ -6,26 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Adidas</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!--Google Fonts Link-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
+    <!--Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/8a8c5a2b59.js" crossorigin="anonymous"></script>
+    <!--Slick Slider CSS links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" />
+    <!--Fancybox-popup CSS cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" />
+    <!--My Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-----Container----->
     <div class="container">
         <!-----Notification Bar----->
-        <section id="topBar"></section>
+        <section id="topBar">
+            <div class="wrap">
+                <p>Live race stream from gator nationals in sarasota, fl / <a href="#">Watch now</a></p>
+                <a href="#" class="closeBtn" onclick="closeBtn()"><i class="fas fa-times-circle"></i></a>
+            </div>
+        </section>
         <!-----Header----->
-        <header id="header"></header>
+        <header id="header">
+            <!-----Primary Header----->
+            <div class="primary-header">
+                <div class="wrap">
+                    <div class="Brand">
+                        <a href="#"><h1 class="logo">Adidas</h1></a>
+                        <img src="img/burger-icon.png" class="toggler-btn" onclick="togglemenu()">
+                    </div>
+                    <div class="membership">
+                        <a href="#" class="btn">Membership</a>
+                        <a href="#" class="btn">Account</a>
+                    </div>
+                </div>
+            </div>
+            <!-----Secondary Header / Navigation Bar----->
+            <nav class="seconday-header" id="navBar">
+                <div class="wrap">
+                    <ul class="navbar">
+                        <li><a href="#" class="nav-item active">Our Tracks</a></li>
+                        <li><a href="#" class="nav-item">Find Events</a></li>
+                        <li><a href="#" class="nav-item">Track Map</a></li>
+                        <li><a href="#" class="nav-item">Shop</a></li>
+                        <li><a href="#" class="nav-item">About Us</a></li>
+                    </ul>
+                    <input type="text" placeholder="Search" class="searchbar">
+                </div>
+            </nav>
+        </header>
         <!-----Homepage----->
-        <main id="homepage"></main>
+        <main id="homepage">
+            <!--Title Bar-->
+            <section class="title-bar">
+                <div class="wrap">
+                    <div class="page-title">
+                        <h2>Home Page</h2>
+                    </div>
+                    <div class="partnership">
+                        <p>Partnership by</p>
+                        <img src="img/reebok-logo.png" alt="Reebok">
+                    </div>
+                </div>
+            </section>
+            <!--Main Slider-->
+            <section class="main-slider">
+                <div class="heroSlider">
+                    <!--Slide 1-->
+                    <div class="slide">
+                        <div class="slide-info">
+                            <h2 class="slide-title">Get Ready for new adidas bands</h2>
+                            <p class="slide-desc">Adidas tracks all begin with a starting gate and end with a finish line, but everything in between varies from track to track. Because no two tracks are alike, this action sport keeps you on your toes wherever you are racing.</p>
+                        </div>
+                        <div class="slide-video">
+                            <a data-fancybox href="https://youtu.be/_72fZaLSiVs">
+                                <img src="img/play-icon.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Under Construction-->
+            <section class="under-const">
+                <div class="wrap">
+                    <h2 class="title">To Be Continued...<br> (Under Construction...)</h2>
+                </div>
+            </section>
+        </main>
         <!-----Footer----->
         <footer id="footer"></footer>
     </div>
+    <!--JQuery CDN Link-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Slick Slider cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+    <!--Fancy-box Popup cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous"></script>
+    <!--My Custom JavaScript-->
     <script src="js/functions.js"></script>
 </body>
 

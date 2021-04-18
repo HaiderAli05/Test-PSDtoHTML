@@ -2,7 +2,7 @@
 Theme Name: Test-PSDtoHTML
 Theme URI: https://github.com/HaiderAli05/Test-PSDtoHTML
 Author: Haider Ali
-Author URI: https://facebook.com/EngineerHaiderAli05/
+Author URI: https://www.linkedin.com/in/haiderali05/
 Description: It is the theme that is given by WPBrigade for just testing my skills of converting any PSD to HTML, CSS and JavaScript.
 Tags: WPBrigade Project, Test-PSDtoHTML, Carbon Copy of Adidas
 Version: 1.0
@@ -16,11 +16,14 @@ Version: 1.0
 /******3.2. Seconday Header*****/
 /******4. Homepage*****/
 /******4.1 Title Bar*****/
+/******4.2 Main Slider*****/
+/******5. Footer*****/
 /******************************The End**********************************/
 
 @import "_topbar.css";
 @import "_header.css";
 @import "_homepage.css";
+@import "_footer.css";
 
 /******1. Global Stylings*****/
 *{
@@ -41,3 +44,15 @@ body{
     margin: auto;
     padding: 0 15px;
 }
+
+/******2. Top Bar*****/
+/* @import "_topbar.css"; */
+
+/******3. Header*****/
+/* @import "_header.css"; */
+
+/******4. Homepage*****/
+/* @import "_homepage.css"; */
+
+/******5. Footer*****/
+/* @import "_footer.css"; */
