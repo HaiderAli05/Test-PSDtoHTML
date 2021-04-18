@@ -59,6 +59,7 @@
     max-width: 1440px;
     margin: auto;
     min-height: 549px;
+    display: grid;
 }
 .slide {
     max-width: 910px;
