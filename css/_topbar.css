@@ -19,6 +19,7 @@
 }
 #topBar a{
     color: #217f40;
+    text-underline-position: under;
 }
 a.closeBtn{
     position: absolute;

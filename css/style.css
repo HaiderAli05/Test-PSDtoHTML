@@ -34,11 +34,13 @@ Version: 1.0
 }
 body{
     font-family: 'Roboto', sans-serif;
-
 }
-/* :root{
-
-} */
+:root{
+    --primary_color: rgba(8, 81, 45, 0.5);
+    --fb-primary_color: #08512d;
+    --secondary_color: rgba(33, 127, 64, 0.8);
+    --fb-secondary_color: #217f40;
+}
 .wrap{
     max-width: 1140px;
     margin: auto;

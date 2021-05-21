@@ -46,24 +46,24 @@
     clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
     margin-right: -5px;
 
-    background-color: #217f40;
-    background-color: rgba(33, 127, 64, 0.8);
+    background-color: var(--fb-secondary_color);
+    background-color: var(--secondary_color);
     background-blend-mode: screen;
     background-image: url(../img/green-background.png);
 }
 .membership .btn:last-child {
-    background-color: #08512d;
-    background-color: rgba(8, 81, 45, 0.5);
+    background-color: var(--fb-primary_color);
+    background-color: var(--primary_color);
 }
 .membership .btn:last-child:hover{
-    background-color: #217f40;
-    background-color: rgba(33, 127, 64, 0.8);
+    background-color: var(--fb-secondary_color);
+    background-color: var(--secondary_color);
 }
 /******3.2. Secondary Header / Navigation Bar*****/
 .seconday-header{
     min-height: 60px;
-    background-color: #08512d;
-    background-color: rgba(8, 81, 45, 0.5);
+    background-color: var(--fb-primary_color);
+    background-color: var(--primary_color);
     background-blend-mode: screen;
     background-image: url(../img/green-background.png);
     filter: drop-shadow(0px 2px 2.5px rgba(0,0,0,0.25));
@@ -96,8 +96,8 @@
     text-align: center;
 }
 .seconday-header .navbar .nav-item:hover, .active{
-    background-color: #217f40;
-    background-color: rgba(33, 127, 64, 0.8);
+    background-color: var(--fb-secondary_color);
+    background-color: var(--secondary_color);
     background-blend-mode: screen;
     background-image: url(../img/green-background.png);
 }
@@ -123,14 +123,12 @@ input.searchbar:focus {
     outline: none;
 }
 
-
 /******3.3. Tablet View (980px)*****/
 @media screen and (max-width: 980px){
     .seconday-header .navbar .nav-item {
         padding: 21px 28px;
         font-size: 16px;
     }
-    
 }
 /******3.4. Tablet View (820px)*****/
 @media screen and (max-width: 820px){
@@ -146,7 +144,6 @@ input.searchbar:focus {
     .logo{
         width: 94px;
     }
-    
 }
 /******3.6. Mobile View (475px)*****/
 @media screen and (max-width: 475px){
@@ -163,6 +160,9 @@ input.searchbar:focus {
         align-items: center;
         height: 60px;
         padding: 0 15px;
+    }
+    .logo-link{
+        width: 94px;
     }
     .toggler-btn{
         display: block;
